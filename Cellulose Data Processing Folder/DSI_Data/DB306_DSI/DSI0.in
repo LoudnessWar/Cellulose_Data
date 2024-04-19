@@ -1,0 +1,6 @@
+parm ../../linker_DB306/*.prmtop
+trajin ../../linker_DB306/MD0_2/prod.nc 101 last
+distance d_CD-CBM :1-418&!@H= :431-527&!@H= out DSI0_raw.dat geom
+radgyr Rg_CD :1-418&!@H= out DSI0_raw.dat nomax
+radgyr Rg_CBM :431-527&!@H= out DSI0_raw.dat nomax
+radgyr Rg_Global :1-527&!@H= out DSI0_raw.dat nomax

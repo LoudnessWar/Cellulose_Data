@@ -1,0 +1,6 @@
+parm ../../linker_Syn576/*.prmtop
+trajin ../../linker_Syn576/MD0_2/prod.nc 101 last
+distance d_CD-CBM :1-418&!@H= :429-525&!@H= out DSI0_raw.dat geom
+radgyr Rg_CD :1-418&!@H= out DSI0_raw.dat nomax
+radgyr Rg_CBM :429-525&!@H= out DSI0_raw.dat nomax
+radgyr Rg_Global :1-525&!@H= out DSI0_raw.dat nomax
