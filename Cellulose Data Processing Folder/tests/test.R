@@ -152,6 +152,6 @@ combinedDFRAW <- cbind(combinedSDRaw, combinedMeanRaw)
 finalDF<- cbind(combinedDFRAW, combineddf)
 print(finalDF)
 
-write.csv(finalDF, "fartmuffinJR.csv", row.names = TRUE)
+write.csv(finalDF, "fin.csv", row.names = TRUE)
 
 
