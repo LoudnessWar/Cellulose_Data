@@ -193,7 +193,7 @@ put it into text files
 
 ```{r}
 
-write.csv(finalDF, "smellynuts.csv", row.names = TRUE)
+write.csv(finalDF, "fin.csv", row.names = TRUE)
 #write.csv(combineddf, "combineddfnotrawnameitwhatyouwant.csv", row.names = TRUE)
 
 # #mean
