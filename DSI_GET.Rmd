@@ -70,7 +70,7 @@ means <- lapply(data, colMeans)
 
 
 calculate_sd <- function(df) {
-  sapply(df, sd, na.rm = TRUE)
+  sapply(df, sd, na.rm = TRUE)#this can be changed I did rm it here bc 
 }
 
 stanDeviation <- sapply(data, calculate_sd)
@@ -93,6 +93,8 @@ below is junk I dont even remeber what it was for
 mean
 
 ```{r}
+
+#This could be done in one for loop this is just old maybe will fix later
 meanFrameListRAW <- list()
 
 for (i in seq_along(means)) {

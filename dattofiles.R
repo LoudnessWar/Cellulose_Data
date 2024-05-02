@@ -9,19 +9,11 @@ find_files <- function(directory, file_pattern) {
 # files <- list.files(directory, recursive = TRUE, full.names = TRUE)
 # matching_files <- grep(file_pattern, files, value = TRUE)
 
-
 directory <- "DSI_Data"
 file_pattern <- '*.dat'
 
 matching_files <- find_files(directory, file_pattern)
 print(matching_files)
-
-
-stuff <- gregexpr("(DB|Syn)\\d+", matching_files)#I stole this off the internet :skull:
-info <- regmatches(matching_files, stuff)
-
-#ok so its putting them as this weird nested list
-winfo <- unlist(info)#bc its winning
 
 datreader <- function(filePath) {
   
