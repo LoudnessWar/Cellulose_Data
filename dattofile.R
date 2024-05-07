@@ -43,21 +43,7 @@ for(n in matching_files){
   data <- data#[,-1,drop = FALSE]
   frame_list[[n]] <- data
 }
-# print(frame_list[20])
-# print(tail(frame_list[[20]]))
-# max_rows <- max(sapply(frame_list, nrow))
 
-# pad <- function(df, desired_length) {
-#   current_length <- nrow(df)
-#   if (current_length < desired_length) {
-#     padding <- data.frame(matrix(NA, nrow = desired_length - current_length, ncol = ncol(df)))
-#     colnames(padding) <- colnames(df)
-#     df <- rbind(df, padding)
-#   }
-#   return(df)
-# }
-
-# frame_padded <- lapply(frame_list, pad, max_rows)
 
 rawdata <- list()
 dsidata <- list()
